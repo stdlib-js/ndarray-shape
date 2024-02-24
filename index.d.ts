@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,26 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray, Shape } from '@stdlib/types/ndarray';
 
 /**
-* Return the shape of a provided ndarray.
+* Returns the shape of a provided ndarray.
 *
-* @module @stdlib/ndarray-shape
+* @param x - input ndarray
+* @returns shape
 *
 * @example
 * var zeros = require( '@stdlib/ndarray-zeros' );
-* var shape = require( '@stdlib/ndarray-shape' );
 *
 * var sh = shape( zeros( [ 3, 3, 3 ] ) );
 * // returns [ 3, 3, 3 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function shape( x: ndarray ): Shape;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = shape;
